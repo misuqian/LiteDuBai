@@ -9,5 +9,6 @@ A Safari Extension to Avoid Ads in baidu search
 
 more detial in [Running Your First Safari App Extension](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/SafariAppExtension_PG/CreatingandTestingYourFirstSafariAppExtension.html#//apple_ref/doc/uid/TP40017319-CH11-SW1)
 
-#Direct use
-copy 
+#Direct use(maybe)
+
+copy LiteDuBai.appex to safari plugins folder
