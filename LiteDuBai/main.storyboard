@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PopVC-->
+        <scene sceneID="zd6-2r-mID">
+            <objects>
+                <viewController storyboardIdentifier="pop" id="MRK-k4-fpc" customClass="PopVC" customModule="LiteDuBai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="kec-Xo-BTo">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-xK-wHG">
+                                <rect key="frame" x="8" y="260" width="111" height="30"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="LiteDuBai" id="qaN-aM-IcJ">
+                                    <font key="font" metaFont="system" size="25"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="kMy-86-2U7">
+                                <rect key="frame" x="8" y="146" width="104" height="20"/>
+                                <buttonCell key="cell" type="check" title="屏蔽右边栏" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="xyZ-GN-kH1">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="16" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="youbianlanTap:" target="MRK-k4-fpc" id="lht-r7-PF1"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="zDb-PZ-Q3F">
+                                <rect key="frame" x="8" y="110" width="137" height="20"/>
+                                <buttonCell key="cell" type="check" title="百度云外链下载" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="JP4-fl-yhx">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="16" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="yunDownloadTAp:" target="MRK-k4-fpc" id="DPI-xD-1p8"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="fXh-d3-QH7">
+                                <rect key="frame" x="8" y="182" width="88" height="20"/>
+                                <buttonCell key="cell" type="check" title="屏蔽广告" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="4fH-OT-Fap">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="16" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="guanggaoTap:" target="MRK-k4-fpc" id="rC1-jL-WSW"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9c-Ia-yOl">
+                                <rect key="frame" x="8" y="220" width="204" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7b9-S2-Cqh"/>
+                                    <constraint firstAttribute="width" constant="200" id="G7q-bD-xFa"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="本插件仅对www.baidu.com及yun.baidu.com有效" id="tX7-KE-XLQ">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fXh-d3-QH7" firstAttribute="leading" secondItem="kec-Xo-BTo" secondAttribute="leading" constant="10" id="0gu-4f-1Wf"/>
+                            <constraint firstItem="zDb-PZ-Q3F" firstAttribute="top" secondItem="kMy-86-2U7" secondAttribute="bottom" constant="20" id="0za-ji-XLN"/>
+                            <constraint firstItem="kMy-86-2U7" firstAttribute="top" secondItem="fXh-d3-QH7" secondAttribute="bottom" constant="20" id="2SO-ox-WkZ"/>
+                            <constraint firstItem="kMy-86-2U7" firstAttribute="leading" secondItem="kec-Xo-BTo" secondAttribute="leading" constant="10" id="Hqu-bA-Ggk"/>
+                            <constraint firstItem="n9c-Ia-yOl" firstAttribute="top" secondItem="Zey-xK-wHG" secondAttribute="bottom" constant="5" id="Hsd-nI-QZo"/>
+                            <constraint firstItem="fXh-d3-QH7" firstAttribute="top" secondItem="Zey-xK-wHG" secondAttribute="bottom" constant="60" id="T9o-mo-aKW"/>
+                            <constraint firstItem="n9c-Ia-yOl" firstAttribute="leading" secondItem="kec-Xo-BTo" secondAttribute="leading" constant="10" id="emW-jB-Dow"/>
+                            <constraint firstItem="zDb-PZ-Q3F" firstAttribute="leading" secondItem="kec-Xo-BTo" secondAttribute="leading" constant="10" id="j7z-Qf-nBK"/>
+                            <constraint firstItem="Zey-xK-wHG" firstAttribute="top" secondItem="kec-Xo-BTo" secondAttribute="top" constant="10" id="lzl-o1-QJJ"/>
+                            <constraint firstItem="Zey-xK-wHG" firstAttribute="leading" secondItem="kec-Xo-BTo" secondAttribute="leading" constant="10" id="mzk-sv-nVb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guanggao" destination="fXh-d3-QH7" id="LuQ-SZ-97f"/>
+                        <outlet property="youbianlan" destination="kMy-86-2U7" id="9Rj-bq-25s"/>
+                        <outlet property="yun" destination="zDb-PZ-Q3F" id="3c7-Q5-V3z"/>
+                    </connections>
+                </viewController>
+                <customObject id="wf3-PU-QhW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-25"/>
+        </scene>
+    </scenes>
+</document>

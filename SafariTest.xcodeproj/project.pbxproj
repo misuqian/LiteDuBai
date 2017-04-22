@@ -14,7 +14,9 @@
 		36BC05501EAA4717001729C7 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BC054F1EAA4717001729C7 /* SafariExtensionHandler.swift */; };
 		36BC05581EAA4717001729C7 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 36BC05571EAA4717001729C7 /* script.js */; };
 		36BC055D1EAA4717001729C7 /* LiteDuBai.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36BC054A1EAA4717001729C7 /* LiteDuBai.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		36BC05621EAA717A001729C7 /* ADS.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BC05611EAA717A001729C7 /* ADS.png */; };
+		36BC05641EAB068F001729C7 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BC05631EAB068F001729C7 /* PopVC.swift */; };
+		36BC05831EAB09AC001729C7 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36BC05821EAB09AC001729C7 /* main.storyboard */; };
+		36BC05891EAB1336001729C7 /* jin.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BC05881EAB1336001729C7 /* jin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,9 @@
 		36BC054F1EAA4717001729C7 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		36BC05561EAA4717001729C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36BC05571EAA4717001729C7 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
-		36BC05611EAA717A001729C7 /* ADS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADS.png; sourceTree = "<group>"; };
+		36BC05631EAB068F001729C7 /* PopVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
+		36BC05821EAB09AC001729C7 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		36BC05881EAB1336001729C7 /* jin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				36BC054F1EAA4717001729C7 /* SafariExtensionHandler.swift */,
+				36BC05631EAB068F001729C7 /* PopVC.swift */,
+				36BC05821EAB09AC001729C7 /* main.storyboard */,
 				36BC05561EAA4717001729C7 /* Info.plist */,
 				36BC05571EAA4717001729C7 /* script.js */,
-				36BC05611EAA717A001729C7 /* ADS.png */,
+				36BC05881EAB1336001729C7 /* jin.png */,
 				36BC054D1EAA4717001729C7 /* Supporting Files */,
 			);
 			path = LiteDuBai;
@@ -227,8 +233,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BC05621EAA717A001729C7 /* ADS.png in Resources */,
+				36BC05891EAB1336001729C7 /* jin.png in Resources */,
 				36BC05581EAA4717001729C7 /* script.js in Resources */,
+				36BC05831EAB09AC001729C7 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BC05641EAB068F001729C7 /* PopVC.swift in Sources */,
 				36BC05501EAA4717001729C7 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +411,7 @@
 				DEVELOPMENT_TEAM = 9UFJZ26YG9;
 				INFOPLIST_FILE = LiteDuBai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = Micoder.safariTest.SafariTest.LiteDuBai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -418,6 +427,7 @@
 				DEVELOPMENT_TEAM = 9UFJZ26YG9;
 				INFOPLIST_FILE = LiteDuBai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = Micoder.safariTest.SafariTest.LiteDuBai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
